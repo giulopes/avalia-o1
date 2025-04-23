@@ -1,95 +1,119 @@
 /* --- Estilos gerais --- */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fdfdfd;
-    color: #222;
-    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
+/* Estilo para o header */
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav .nav-link {
+    color: white;
     font-weight: bold;
-    color: #1a1a1a;
+    margin: 0 15px;
+    font-size: 1.1rem;
 }
 
-.btn {
-    transition: transform 0.2s ease;
+nav .nav-link:hover {
+    text-decoration: underline;
 }
 
-.btn:hover {
-    transform: scale(1.05);
-}
-
-/* --- Acessibilidade: Foco visível --- */
-input:focus, textarea:focus, button:focus, a:focus {
-    outline: 3px solid #005fcc;
-    outline-offset: 2px;
-}
-
-/* --- Botões de acessibilidade --- */
-#opcoes-acessibilidade {
-    display: none;
-}
-
-#opcoes-acessibilidade.apresenta-lista {
+/* Estilo para o conteúdo principal */
+.inicio-fundo {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-/* --- Modo alto contraste --- */
-body.contraste-alto {
-    background-color: #000 !important;
-    color: #fff !important;
-}
-
-body.contraste-alto a,
-body.contraste-alto h1,
-body.contraste-alto h2,
-body.contraste-alto h3,
-body.contraste-alto p,
-body.contraste-alto label {
-    color: #ffeb3b !important;
-}
-
-body.contraste-alto .btn {
-    background-color: #ffeb3b !important;
-    color: #000 !important;
-    border: none;
-}
-
-/* --- Galeria --- */
-.fundo-galeria img {
-    border: 4px solid #ccc;
-    transition: 0.3s ease;
-}
-
-.fundo-galeria img:hover {
-    border-color: #007bff;
-    transform: scale(1.03);
-}
-
-/* --- Formulário --- */
-.formulario {
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1e22;
+    color: white;
     padding: 30px;
 }
 
-.formulario input,
-.formulario textarea {
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    transition: border-color 0.3s;
+.inicio-fundo h1 {
+    font-size: 3rem;
 }
 
-.formulario input:focus,
-.formulario textarea:focus {
-    border-color: #007bff;
+.inicio-fundo .img-inicio {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* --- Rodapé --- */
+/* Seção movimento */
+.secao-movimento {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.secao-movimento h2 {
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.secao-movimento p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* Estilo para as galerias */
+.fundo-galeria {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.fundo-galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
+.formulario {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
 footer {
-    background-color: #f1f1f1;
-    color: #333;
-    font-size: 0.9rem;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .bi {
+    font-size: 2rem;
+    margin: 10px;
+    color: white;
+}
+
+footer .bi:hover {
+    color: #007bff;
 }
