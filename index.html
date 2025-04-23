@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modernismo Brasileiro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-5 bg-dark text-white">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo-modernismo.png" alt="Logo do site" class="nav-img" loading="lazy">
+            <ul class="nav mt-4">
+                <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <!-- Seção Início -->
+        <section id="inicio" class="my-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold text-primary">Descubra o Modernismo Brasileiro</h1>
+                    <p class="lead">Um movimento que revolucionou a arte, a literatura e o pensamento nacional.</p>
+                    <a href="#modernismo" class="btn btn-primary btn-lg">Explorar</a>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/tarsila-abaporu.png" alt="Obra Abaporu de Tarsila do Amaral" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="modernismo" class="my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/semana-22.jpg" class="img-fluid rounded" alt="Semana de Arte Moderna">
+                </div>
+                <div class="col-md-6">
+                    <h2>O que foi o Modernismo?</h2>
+                    <p>O Modernismo Brasileiro foi um movimento artístico e literário iniciado na década de 1920, marcado pela Semana de Arte Moderna de 1922. Valorizava a cultura brasileira, rompeu com os padrões tradicionais da arte europeia e deu voz a autores como Mário de Andrade, Oswald de Andrade, Manuel Bandeira e Tarsila do Amaral.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Galeria -->
+        <section id="galeria" class="my-5">
+            <h2 class="text-center">Galeria Modernista</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-3"><img src="img/mario-andrade.jpg" class="img-fluid rounded" alt="Mário de Andrade"></div>
+                <div class="col-md-3"><img src="img/oswald-andrade.jpg" class="img-fluid rounded" alt="Oswald de Andrade"></div>
+                <div class="col-md-3"><img src="img/tarsila-do-amaral.jpg" class="img-fluid rounded" alt="Tarsila do Amaral"></div>
+                <div class="col-md-3"><img src="img/manuel-bandeira.jpg" class="img-fluid rounded" alt="Manuel Bandeira"></div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="my-5">
+            <div class="p-5 bg-light rounded-5">
+                <h2 class="mb-4 text-center">Fale Conosco</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome completo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva aqui sua mensagem..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-4 bg-dark text-white">
+        <p>© 2025 Modernismo Brasileiro. Projeto educacional sem fins comerciais.</p>
+        <div>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-envelope-fill"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

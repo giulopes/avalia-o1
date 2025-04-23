@@ -1,0 +1,90 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e fundo */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1a1a1a;
+}
+
+.nav-img {
+    width: 80px;
+    height: auto;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffcc70;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #0a3871;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #0a3871;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #062348;
+}
+
+/* Seção de galeria */
+#galeria img {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulário */
+input[type="text"], input[type="email"], textarea {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: #0a3871;
+    outline: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer i {
+    font-size: 1.4rem;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer i:hover {
+    color: #ffcc70;
+}
