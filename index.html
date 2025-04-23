@@ -1,90 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modernismo Brasileiro</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Modernismo Brasileiro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Modernismo Brasileiro</h1>
-    <nav>
-      <ul>
-        <li><a href="#introducao">Início</a></li>
-        <li><a href="#autores">Autores</a></li>
-        <li><a href="#obras">Obras</a></li>
-        <li><a href="#formulario">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo.png" class="nav-img" loading="lazy" alt="Logo Modernismo Brasileiro">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#movimento">Movimento</a></li>
+                <li class="nav-item"><a class="nav-link" href="#artistas">Artistas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section id="introducao">
-      <h2>O que foi o Modernismo?</h2>
-      <p>O Modernismo Brasileiro foi um movimento artístico e cultural que buscou romper com os padrões tradicionais da arte, literatura e cultura brasileira, promovendo uma linguagem própria, mais próxima da realidade nacional.</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Mario_de_Andrade_1928.jpg" alt="Retrato de Mário de Andrade, importante autor modernista brasileiro" />
-    </section>
+    <main class="container my-5">
 
-    <section id="autores">
-      <h2>Principais Autores</h2>
-      <div class="cards">
-        <article>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Mario_de_Andrade_1928.jpg" alt="Foto de Mário de Andrade em preto e branco" />
-          <h3>Mário de Andrade</h3>
-          <p>Poeta, romancista e ensaísta, foi um dos líderes da Semana de Arte Moderna de 1922.</p>
-        </article>
-        <article>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Tarsila_do_Amaral.jpg" alt="Foto de Tarsila do Amaral, artista modernista" />
-          <h3>Tarsila do Amaral</h3>
-          <p>Importante pintora modernista, autora de obras como "Abaporu".</p>
-        </article>
-      </div>
-    </section>
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Modernismo Brasileiro</h1>
+                    <img src="img/logo-modernismo.png" class="mb-3" width="563" height="278" loading="lazy"
+                        alt="Imagem representando o Modernismo Brasileiro">
+                    <a href="#movimento" class="btn btn-primary btn-lg botao-inicio fw-semibold">Conheça o Movimento!</a>
+                </div>
+                <img src="img/modernismo-img.jpg" alt="Imagens do Modernismo Brasileiro, incluindo obras e artistas"
+                    title="Exemplo de obras modernistas no Brasil" class="img-fluid img-inicio">
+            </div>
+        </section>
 
-    <section id="obras">
-      <h2>Obras Marcantes</h2>
-      <div class="cards">
-        <article>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Abaporu_-_Tarsila_do_Amaral.jpg" alt="Pintura Abaporu, de Tarsila do Amaral, figura humana com pés e mãos exageradamente grandes" />
-          <h3>Abaporu</h3>
-          <p>Obra de Tarsila do Amaral, ícone do movimento antropofágico no Brasil.</p>
-        </article>
-        <article>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Pauliceia_Desvairada.jpg" alt="Capa do livro Pauliceia Desvairada, de Mário de Andrade" />
-          <h3>Pauliceia Desvairada</h3>
-          <p>Livro de poemas de Mário de Andrade que expressa a urbanidade e a modernidade de São Paulo.</p>
-        </article>
-      </div>
-    </section>
+        <section id="movimento" class="my-5 pt-6 secao-movimento">
+            <div class="container d-flex align-items-center">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="img/movimento.png" class="rounded-pill" alt="Movimento Modernismo" width="273" height="331"
+                        loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>O que foi o Modernismo Brasileiro?</h2>
+                    <p class="p-2">O Modernismo foi um movimento cultural brasileiro que aconteceu principalmente nas
+                        décadas de 1920 e 1930. Ele foi marcado pela busca de uma identidade nacional, misturando
+                        elementos da cultura brasileira com influências de estilos internacionais, como o cubismo e o
+                        futurismo. O movimento teve grande impacto na literatura, nas artes plásticas e na música.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="formulario">
-      <h2>Fale Conosco</h2>
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
+        <section id="artistas">
+            <h2 class="text-center pt-5">Principais Artistas</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/di-cavalcanti.jpg" alt="Obra de Di Cavalcanti" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/tarsila.jpg" alt="Obra de Tarsila do Amaral" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required />
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
 
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Modernismo Brasileiro. Todos os direitos reservados.</p>
-  </footer>
-
-  <script>
-    // JavaScript simples para interatividade futura
-    document.querySelector("form").addEventListener("submit", function(e) {
-      e.preventDefault();
-      alert("Mensagem enviada com sucesso!");
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
