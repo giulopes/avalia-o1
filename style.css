@@ -1,119 +1,35 @@
-/* --- Estilos gerais --- */
+/* Ajustes de fontes e cores */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Estilo para o header */
+h1, h2 {
+    color: #004d00; /* Cor que remete ao movimento Modernista */
+}
+
+/* Estilizando o cabeçalho */
 header {
-    background-color: #343a40;
+    background-color: #005500;
     color: white;
-    padding: 30px 0;
 }
 
-nav img {
-    width: 100px;
-}
-
-nav .nav-link {
+/* Botões de acessibilidade */
+#botao-acessibilidade {
+    background-color: #007bff;
     color: white;
-    font-weight: bold;
-    margin: 0 15px;
-    font-size: 1.1rem;
-}
-
-nav .nav-link:hover {
-    text-decoration: underline;
-}
-
-/* Estilo para o conteúdo principal */
-.inicio-fundo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1c1e22;
-    color: white;
-    padding: 30px;
-}
-
-.inicio-fundo h1 {
-    font-size: 3rem;
-}
-
-.inicio-fundo .img-inicio {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Seção movimento */
-.secao-movimento {
-    background-color: #ffffff;
-    padding: 50px 0;
-}
-
-.secao-movimento h2 {
-    font-size: 2rem;
-    color: #343a40;
-}
-
-.secao-movimento p {
-    font-size: 1.1rem;
-    color: #6c757d;
-}
-
-/* Estilo para as galerias */
-.fundo-galeria {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.fundo-galeria img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Formulário */
 .formulario {
-    background-color: #ffffff;
-    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Imagens */
+.img-inicio {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.formulario input, .formulario textarea {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-button {
-    background-color: #007bff;
-    border: none;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer .bi {
-    font-size: 2rem;
-    margin: 10px;
-    color: white;
-}
-
-footer .bi:hover {
-    color: #007bff;
 }
