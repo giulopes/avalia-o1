@@ -4,60 +4,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Modernismo Brasileiro</title>
-  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>Modernismo Brasileiro</h1>
     <nav>
       <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#introducao">Início</a></li>
+        <li><a href="#autores">Autores</a></li>
+        <li><a href="#obras">Obras</a></li>
+        <li><a href="#formulario">Contato</a></li>
       </ul>
     </nav>
-    <div class="acessibilidade">
-      <button onclick="aumentarFonte()" aria-label="Aumentar fonte">A+</button>
-      <button onclick="diminuirFonte()" aria-label="Diminuir fonte">A-</button>
-      <button onclick="toggleContraste()" aria-label="Ativar alto contraste">Contraste</button>
-    </div>
   </header>
 
-  <main id="inicio">
-    <section class="apresentacao">
-      <h2>Bem-vindo ao universo modernista!</h2>
-      <p>Explore a riqueza cultural do Brasil com foco no Modernismo — um movimento artístico que revolucionou a arte, literatura e pensamento nacional no século XX.</p>
+  <main>
+    <section id="introducao">
+      <h2>O que foi o Modernismo?</h2>
+      <p>O Modernismo Brasileiro foi um movimento artístico e cultural que buscou romper com os padrões tradicionais da arte, literatura e cultura brasileira, promovendo uma linguagem própria, mais próxima da realidade nacional.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Mario_de_Andrade_1928.jpg" alt="Retrato de Mário de Andrade, importante autor modernista brasileiro" />
     </section>
 
-    <section id="galeria">
-      <h2>Galeria Modernista</h2>
-      <div class="galeria-grid">
-        <figure>
-          <img src="tarsila.jpg" alt="Obra Abaporu de Tarsila do Amaral" />
-          <figcaption>Abaporu - Tarsila do Amaral</figcaption>
-        </figure>
-        <figure>
-          <img src="oswald.jpg" alt="Foto de Oswald de Andrade" />
-          <figcaption>Oswald de Andrade</figcaption>
-        </figure>
-        <figure>
-          <img src="mario.jpg" alt="Foto de Mário de Andrade" />
-          <figcaption>Mário de Andrade</figcaption>
-        </figure>
+    <section id="autores">
+      <h2>Principais Autores</h2>
+      <div class="cards">
+        <article>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Mario_de_Andrade_1928.jpg" alt="Foto de Mário de Andrade em preto e branco" />
+          <h3>Mário de Andrade</h3>
+          <p>Poeta, romancista e ensaísta, foi um dos líderes da Semana de Arte Moderna de 1922.</p>
+        </article>
+        <article>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Tarsila_do_Amaral.jpg" alt="Foto de Tarsila do Amaral, artista modernista" />
+          <h3>Tarsila do Amaral</h3>
+          <p>Importante pintora modernista, autora de obras como "Abaporu".</p>
+        </article>
       </div>
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
+    <section id="obras">
+      <h2>Obras Marcantes</h2>
+      <div class="cards">
+        <article>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Abaporu_-_Tarsila_do_Amaral.jpg" alt="Pintura Abaporu, de Tarsila do Amaral, figura humana com pés e mãos exageradamente grandes" />
+          <h3>Abaporu</h3>
+          <p>Obra de Tarsila do Amaral, ícone do movimento antropofágico no Brasil.</p>
+        </article>
+        <article>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Pauliceia_Desvairada.jpg" alt="Capa do livro Pauliceia Desvairada, de Mário de Andrade" />
+          <h3>Pauliceia Desvairada</h3>
+          <p>Livro de poemas de Mário de Andrade que expressa a urbanidade e a modernidade de São Paulo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="formulario">
+      <h2>Fale Conosco</h2>
       <form>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" aria-label="Nome completo" required />
+        <input type="text" id="nome" name="nome" required />
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" aria-label="Email" required />
+        <input type="email" id="email" name="email" required />
 
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" aria-label="Digite sua mensagem"></textarea>
+        <textarea id="mensagem" name="mensagem" required></textarea>
 
         <button type="submit">Enviar</button>
       </form>
@@ -69,15 +80,11 @@
   </footer>
 
   <script>
-    function aumentarFonte() {
-      document.body.style.fontSize = 'larger';
-    }
-    function diminuirFonte() {
-      document.body.style.fontSize = 'smaller';
-    }
-    function toggleContraste() {
-      document.body.classList.toggle('contraste');
-    }
+    // JavaScript simples para interatividade futura
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Mensagem enviada com sucesso!");
+    });
   </script>
 </body>
 </html>
