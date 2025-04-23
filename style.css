@@ -1,35 +1,35 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #fff3e0; /* Fundo claro */
     font-family: 'Arial', sans-serif;
 }
 
 header {
-    background-color: #343a40;
+    background-color: #ff5722; /* Laranja escuro */
 }
 
 .nav-link {
-    color: #ffffff !important;
+    color: #ffffff !important; /* Links brancos */
 }
 
 .inicio-fundo {
-    background-color: #6c757d;
+    background-color: #ff9800; /* Laranja médio */
     padding: 20px;
 }
 
 .secao-movimento {
-    background-color: #e9ecef;
+    background-color: #ffe0b2; /* Laranja claro */
 }
 
 .fundo-galeria {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Fundo branco para a galeria */
 }
 
 .formulario {
-    background-color: #f1f3f5;
+    background-color: #fff3e0; /* Fundo claro para o formulário */
     padding: 20px;
 }
 
 footer {
-    background-color: #343a40;
-    color: #ffffff;
+    background-color: #ff5722; /* Laranja escuro */
+    color: #ffffff; /* Texto branco no rodapé */
 }
